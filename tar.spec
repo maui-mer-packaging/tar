@@ -8,9 +8,15 @@ Name:       tar
 # >> macros
 # << macros
 
+# >> bcond_with
+# << bcond_with
+
+# >> bcond_without
+# << bcond_without
+
 Summary:    A GNU file archiving program
 Version:    1.28
-Release:    1
+Release:    2
 Group:      Applications/Archiving
 License:    GPLv3+
 URL:        http://www.gnu.org/software/tar/
@@ -19,6 +25,11 @@ Source1:    tar.1
 Source100:  tar.yaml
 BuildRequires:  gettext
 BuildRequires:  libacl-devel
+BuildRequires:  gzip
+BuildRequires:  bzip2
+BuildRequires:  lzma
+BuildRequires:  lzo
+BuildRequires:  xz
 
 %description
 The GNU tar program saves many files together in one archive and can
